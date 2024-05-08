@@ -1,0 +1,50 @@
+/*
+
+	 <nav>
+        
+        <ul >
+            <li><a href="index.html"><img src="img/supermercados.png" ></a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Quiénes Somos</a></li>
+			<li class="carrito"><a href="index.html"><img src="img/carrito-de-compras.png" ></a></li>
+        </ul>
+    </nav>*/
+	
+/*otra nav*/
+nav {
+    background-color:#FCD714; /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interno */
+	align-items: center;/* alineado */
+	/*border-radius: 10px;*/
+    
+}
+nav ul {
+    list-style-type: none; /* Quita los puntos de la lista nav */
+    margin: 0;
+    padding: 0;
+	display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos del menú */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-right: 20px; /* Espaciado entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-family: 'Arial Black', sans-serif; /* Tipo de fuente */
+    font-size: 18px; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    padding: 5px 10px; /* Añade relleno alrededor del texto */
+    border-radius: 5px; /* Redondea los bordes */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el cursor sobre los enlaces */
+}
+nav ul li.carrito{
+	margin-left: 250px;
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>postulacion</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="scripts.js"></script>
+	<script src="Process.js"></script>
+</head>
+
+<body>
+	<div class="contenedor-formulario">
+	
+		<form class="row g-3" >
+  		<div class="col-md-6">
+	  
+	  <label for="rut" class="form-label">RUT:</label>
+	  <input type="text" class="form-control" id ="rut" required>
+	  <label for="apellidoMaterno" class="form-label">Apellido Materno:</label>
+      <input type="text" class="form-control" id="apellidoMaterno" required>
+	  <label for="apellidoPaterno" class="form-label">Apellido Paterno:</label>
+      <input type="text" class="form-control" id="apellidoPaterno" required>
+	  <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" required>
+   
+	  </div>
+  <div class="col-md-6">
+	  
+	  <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento:</label>
+	  <input type="date" class="form-control" id="fechaNacimiento" required>
+	  <label for="rut" class="form-label">Edad:</label>
+	  <input type="text" class="form-control" id ="edad" required>
+	  <label for="genero" class="form-label">Género:</label>
+	  <select id="genero" class="form-select" required>
+		  <option value="">Seleccione su género</option>
+		  <option value="masculino">Masculino</option>
+		  <option value="femenino">Femenino</option>    
+          <option value="prefieroNoDecirlo">Prefiero no decirlo</option>
+	  </select>	
+	   <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" required>
+  <label for="celular" class="form-label">Número de Celular:</label>
+                <input type="text" class="form-control" id="celular" required>
+  </div>
+  <div class="col-12">
+	  
+ <label for="profesion" class="form-label">Profesión:</label>
+                <input type="text" class="form-control" id="profesion" required>
+  </div>
+  <div class="col-12">
+  <label for="motivacion" class="form-label">Motivación para Postular al Trabajo:</label>
+                <textarea class="form-control" id="motivacion" rows="5" required placeholder="Campo requerido."></textarea>
+	  
+  </div>
+ 
+  <div class="col-12">
+    
+  </div>
+</form>
+		<button type="submit" class="btn btn-primary" onClick="crearCarta()">Generar carta</button><br>
+		 <label for="carta" class="form-label">Carta de Presentación:</label>
+         
+		<textarea class="form-control" id="carta" rows="5"></textarea>
+ </div>
+	
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

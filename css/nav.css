@@ -1,0 +1,83 @@
+/* CSS Document */
+
+/* Estilo para la barra de navegación */
+
+ .navbar-nav .nav-link {
+	 
+   color: white !important; /* Texto en blanco */
+    font-size: 18px; /* Tamaño de la letra */
+	 
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-family: 'Arial Black', sans-serif; /* Tipo de fuente */
+
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    padding: 5px 60px; /* Añade relleno alrededor del texto */
+    border-radius: 5px; /* Redondea los bordes */
+        }
+
+nav {
+	background-color:#004AAD; /* Color de fondo de la barra de navegación */
+    margin-left: 0px;
+	padding-right: 50px;
+}
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-right: 50px; /* Espaciado entre los elementos de la lista */
+    border-bottom: 2px solid #ffffff; /* Agrega un borde inferior */
+    padding-bottom: 5px; /* Añade espacio entre el texto y el borde */
+}
+
+
+nav ul li a:hover {
+    background-color: #28a745; /* Cambia el color de fondo al pasar el cursor sobre los enlaces */
+}
+a.home{
+	  color: white; /* Cambia el color del texto a azul */
+      font-weight: bold; /* Hace que el texto sea negrita */
+	  text-decoration: none; /* Quita el subrayado del enlace */
+	
+}
+/* Estilo para agrandar la imagen y el texto al pasar el mouse */
+.home img,
+.home {
+    transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+.home:hover img,
+.home:hover {
+    transform: scale(1.2); /* Ajusta el valor para el nivel de agrandamiento deseado */
+}
+/* Estilo para agrandar la imagen y el texto al pasar el mouse */
+.d-flex img,
+.d-flex {
+    transition: transform 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+.d-flex:hover img,
+.d-flex:hover {
+    transform: scale(1.2); /* Ajusta el valor para el nivel de agrandamiento deseado */
+}
+footer {
+    /*position: fixed;*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #004AAD;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+	font-family: 'Roboto', sans-serif; /* Usar la fuente Roboto */
+	margin-bottom: 0; /* Eliminar el margen inferior */
+		align-content: center;
+  }
+footer .texto{
+
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+footer .texto2{
+	
+	margin-top: 1px;
+	font-size: 12px;
+}

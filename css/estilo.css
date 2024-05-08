@@ -1,0 +1,209 @@
+/* CSS Document */
+body {
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a todo el texto dentro del cuerpo de la página */
+}
+
+.contenedor-head {
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%; /* Mantener la anchura automática para conservar la proporción */
+    max-height: 360px; /* Establecer una altura máxima */
+    margin: auto; /* Centrar la imagen horizontalmente */
+	
+}
+
+.contenedor-tabla {
+    overflow: auto; /* Para manejar el desbordamiento de la tabla */
+    border-radius: 10px; /* Para hacer el contenedor redondeado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Para agregar sombra */
+    padding: 10px; /* Ajusta el espacio interior según sea necesario */
+    margin: 10px; /* Ajusta el margen según sea necesario */
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+	}
+
+
+.promocion-img {
+	padding: 20px;
+    margin: 10px auto; 
+    border-radius: 40px; /* Redondear los bordes */
+    max-width: 800px; /* Ajustar el tamaño máximo a 400px */
+    height: auto; /* Mantener la proporción */
+  }
+.promocion-img2 {
+	padding: 20px;
+    margin: 10px; 
+    border-radius: 40px; /* Redondear los bordes */
+   	max-width: 100%; /* Establecer un tamaño máximo para la imagen */
+    height: 700px; /* Mantener la proporción */
+  }
+
+
+
+.contenedor-productos {
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.producto {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.producto img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+.producto button {
+    margin-top: 15px;
+    padding: 2px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agregamos transición para un cambio suave */
+	
+  }
+.acar{
+  background-color: #28a745 !important;
+}
+.acar:hover{
+	 background-color: #10ED7C !important;
+}
+
+  .producto button:hover {
+    background-color: #0056b3; /* Cambiamos el color a uno más oscuro al pasar el mouse */
+  }
+
+/* Estilos para el modal */
+.modals {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+.modal-contents {
+    background-color: #fefefe;
+    margin: 10% 5% 10% 5%; /* Modificado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    transition: transform 0.5s ease-out;
+}
+
+/* Cuando el modal está abierto */
+.modals.open {
+    width: 40%;
+}
+
+.modals.open .modal-contents {
+    transform: translateX(0);
+}
+
+.contend-car{
+    background-color: #0056b3;
+}
+@media (max-width: 576px) {
+    .contenedor-productos {
+        flex-direction: column; /* Cambiar a disposición de columna en pantallas más pequeñas */
+    }
+
+    .promocion-img {
+        margin-top: 20px; /* Ajuste para agregar espacio entre la imagen y los productos */
+		display: none;
+		
+    }
+
+    .producto {
+        width: calc(100% - 20px); /* Ancho completo para que los productos ocupen toda la pantalla */
+        margin-right: 0;
+    }
+
+    .producto button {
+        margin-top: 10px; /* Ajustar el margen superior de los botones */
+		height: 30px;
+		width: 100px;
+		text-align: center; /* Centrar horizontalmente el texto */
+		font-size: 11px;
+    }
+}
+
+/* Para pantallas medianas (entre 576px y 768px) */
+@media (min-width: 376px) and (max-width: 768px) {
+ .contenedor-productos {
+        flex-direction: column; /* Cambiar a disposición de columna en pantallas más pequeñas */
+    }
+
+    .promocion-img {
+        margin-top: 20px; /* Ajuste para agregar espacio entre la imagen y los productos */
+		max-width: 10%;
+		display: none;
+    }
+
+    .producto {
+        width: calc(70% - 20px); /* Ancho completo para que los productos ocupen toda la pantalla */
+        margin-right: 0;
+    }
+
+    .producto button {
+        margin-top: 10px; /* Ajustar el margen superior de los botones */
+		height: 30px;
+		width: 100px;
+		text-align: center; /* Centrar horizontalmente el texto */
+		font-size: 11px;
+    }
+}
+
+/* Para pantallas medianas (entre 576px y 768px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+    .promocion-img {
+        margin-top: 10px; /* Ajuste para agregar espacio entre la imagen y los productos */
+		max-width: 60%;
+
+    }
+
+    .producto {
+        width: calc(70% - 10px); /* Ancho completo para que los productos ocupen toda la pantalla */
+        margin-right: 0;
+    }
+
+    .producto button {
+        margin-top: 8px; /* Ajustar el margen superior de los botones */
+    }
+}
+
+
+
+    
+
+
+/*otros*/
+ 
